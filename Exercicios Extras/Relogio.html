@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Relógio Olá Mundo</title>
+
+  <style>
+    body {
+      font-family: system-ui;
+      background: #232323;
+      color: white;
+      text-align: center;
+    }
+
+    .clock {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      color: #FFF;
+      font-size: 60px;
+      font-family: system-ui;
+      letter-spacing: 7px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hora Atualizada</h1>
+  <div id="MeuRelogio" class="clock" onload="showTime()"></div>
+  <script src="Scripts.js"></script>
+</body>
+
+</html>

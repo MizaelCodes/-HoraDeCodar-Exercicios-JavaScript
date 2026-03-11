@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Aritmedica</title>
+
+    <style>
+        body {
+            width: 95%;
+            height: 95vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            background: #232323;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 400px;
+            height: 50vh;
+            background: #cacaca;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 80%;
+            height: 5vh;
+            margin: 0.5rem;
+            border: none;
+            font-size: 18px;
+            text-align: center;
+            outline: none;
+        }
+
+        button{
+            width: 80%;
+            height: 6vh;
+            margin: 0.5rem;
+            border: none;
+            background: #232323;
+            color: #FFF;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: #2e2e2e;
+        }
+
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 80%;
+            height: 10vh;
+            margin: 1rem;
+            background: #FFF;
+            font-size: 24px;
+
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="number" id="n1" placeholder="Informe o primeiro Nº">
+        <input type="number" id="n2" placeholder="Informe o segundo Nº">
+        <input type="number" id="n3" placeholder="Informe o trerceiro Nº">
+        <button onclick="CalcularMedia()">Calcular Media</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="Scripts.js"></script>
+</body>
+
+</html>
